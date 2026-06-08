@@ -15,12 +15,8 @@ Step 4 - add a task - done
 Added the add task POST, imported pydantic and made the Task class. Works with swager - done
 
 Step 5 - Delete a task
-Add a DELETE /tasks/{id} endpoint where {id} is a path parameter
-Remove the matching task from list
-Test in Swagger
+Delete function added and works in Swagger. id is task descr, deletes matching - done
 
 Step 6 - Complete a task
-Add a PATCH /tasks/{id}/complete endpoint that flips a task's completed status
-
-Step 7 - look into introducing a database so that tasks persist? 
+Add a PATCH /tasks/{id}/complete endpoint that flips a task's completed status - done
 
