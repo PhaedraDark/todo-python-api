@@ -1,1 +1,26 @@
 make a to-do list with a python API
+
+step 1 - setup - done
+Virtual environment created using VS code (also researched how to do it via terminal commands) - done
+Install fastAPI and uvicorn via pip - done
+Create main.py - done
+
+Step 2 - try stuff out - done
+'Hello World' fastAPI exercise from their website - done
+
+Step 3 - get tasks for to-do list - done
+Made a test to-do list and changed endpoint to /tasks - need to add /tasks to browser to see return - Done 
+
+Step 4 - add a task - done
+Added the add task POST, imported pydantic and made the Task class. Works with swager - done
+
+Step 5 - Delete a task
+Add a DELETE /tasks/{id} endpoint where {id} is a path parameter
+Remove the matching task from list
+Test in Swagger
+
+Step 6 - Complete a task
+Add a PATCH /tasks/{id}/complete endpoint that flips a task's completed status
+
+Step 7 - look into introducing a database so that tasks persist? 
+
