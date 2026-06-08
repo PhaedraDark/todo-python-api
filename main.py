@@ -10,16 +10,12 @@ todo_list = []
 
 @app.get("/tasks")
 def read_list():
-    id = 0
-    for i in range(len(todo_list)):
-        id += 1
-        todo_list[i].update({"id": id})
     return todo_list
 
 @app.post("/tasks")
 def add_task(todo_task: Task):
-    task = todo_task.descr
-    todo_list.append({"id": 0, "descr": task, "completed": False})
+    next_id = todo_list[-1]["id"] + 1 if todo_list else 1
+    todo_list.append({"id": next_id, "descr": todo_task.descr, "completed": False})
     return {"msg": "Task added."}
 
 @app.delete("/tasks/{id}")
