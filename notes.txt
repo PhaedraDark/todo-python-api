@@ -22,14 +22,13 @@ Add a PATCH /tasks/{id}/complete endpoint that flips a task's completed status -
 
 Step 7 - adjust folders and copy over html, css & js from previous to-do list project - done
 
-Step 8 - research CORS and add it - done (origins = ["*"]), check out more about this later. 
+Step 8 - research CORS and add it - done (origins = ["*"]) - done
 
-Step 9 - fetch tasks on page load
-Remove localStorage from js
+Step 9 - fetch tasks on page load - done
 
-Step 10 - add task via API 
+Step 10 - add task via API - done
 
-Step 11 - delete & complete via API
+Step 11 - delete & complete via API - done
 
 Step 12 - any changes to appearence? 
 
