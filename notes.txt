@@ -20,3 +20,17 @@ Delete function added and works in Swagger. id is task descr, deletes matching -
 Step 6 - Complete a task
 Add a PATCH /tasks/{id}/complete endpoint that flips a task's completed status - done
 
+Step 7 - adjust folders and copy over html, css & js from previous to-do list project - done
+
+Step 8 - research CORS and add it - done (origins = ["*"]), check out more about this later. 
+
+Step 9 - fetch tasks on page load
+Remove localStorage from js
+
+Step 10 - add task via API 
+
+Step 11 - delete & complete via API
+
+Step 12 - any changes to appearence? 
+
+Step 13 - Deploy API on render & frontend on Github pages
