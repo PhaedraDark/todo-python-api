@@ -4,7 +4,7 @@ countText.textContent = "You have no tasks to do."
 
 // functions & buttons
 // fetch from GET /tasks
-const baseUrl = "https://todo-python-api-zezw.onrender.com/"
+const baseUrl = "https://todo-python-api-zezw.onrender.com"
 async function getList() {
     const response = await fetch(`${baseUrl}/tasks`);
     const json = await response.json();
