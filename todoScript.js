@@ -87,7 +87,7 @@ function displayList() {
 // add items to list via click or enter
 let button = document.getElementById("addTask");
 // add button clicked
-button.addEventListener("click", function() {
+button.addEventListener("click", async function() {
     let taskInput = document.getElementById("newTask");
     let task = {
         descr: taskInput.value 
@@ -100,7 +100,7 @@ button.addEventListener("click", function() {
 })
 // press enter in textbox
 let newTask = document.getElementById("newTask");
-newTask.addEventListener("keypress", function(event) {
+newTask.addEventListener("keypress", async function(event) {
     if (event.key === "Enter") {
     let taskInput = document.getElementById("newTask");
     let task = {
@@ -114,7 +114,7 @@ newTask.addEventListener("keypress", function(event) {
 }
 })
 
-document.getElementById("todoList").addEventListener("click", function(event) {
+document.getElementById("todoList").addEventListener("click", async function(event) {
     if (event.target.className.includes("delete")) {
         await deleteAPI(event.target.parentElement.dataset.index);
     }
