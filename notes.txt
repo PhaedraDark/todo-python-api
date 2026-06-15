@@ -30,6 +30,6 @@ Step 10 - add task via API - done
 
 Step 11 - delete & complete via API - done
 
-Step 12 - any changes to appearence? 
+Step 12 - any changes to appearence? - Python API subtitle added
 
 Step 13 - Deploy API on render & frontend on Github pages

@@ -16,9 +16,10 @@ body {
 
 }
 
-h2 {
+#headers {
     border: 2mm ridge black; 
-    padding: 15px;
+    padding: 5px;
+    min-width: 250px;
     background-color: rgb(241, 223, 248);
 }
 
