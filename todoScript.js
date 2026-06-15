@@ -95,7 +95,7 @@ button.addEventListener("click", function() {
         if (task.descr === "") {
             return;
         }
-        addAPI(task); 
+        await addAPI(task); 
         getList();
 })
 // press enter in textbox
@@ -109,17 +109,17 @@ newTask.addEventListener("keypress", function(event) {
     if (task.descr === "") {
         return;
     }
-    addAPI(task); 
+    await addAPI(task); 
     getList();
 }
 })
 
 document.getElementById("todoList").addEventListener("click", function(event) {
     if (event.target.className.includes("delete")) {
-        deleteAPI(event.target.parentElement.dataset.index);
+        await deleteAPI(event.target.parentElement.dataset.index);
     }
     if (event.target.className.includes("taskText")) {
-        patchAPI(event.target.parentElement.dataset.index);
+        await patchAPI(event.target.parentElement.dataset.index);
     }
     getList()
 })
